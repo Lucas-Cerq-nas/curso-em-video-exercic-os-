@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo C - DOM</title>
+</head>
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+
+}
+
+h1,div{
+
+text-align: center;
+
+}
+
+p{
+text-align: center;
+
+}
+
+</style>
+<body>
+
+<h1>iniciando estudos DOM</h1>
+<p>usando <strong>DOM</strong> em Javascript</p> 
+<p id="paragrafo">segundo paragrafo</p>
+
+<div>Clique em  mim</div>
+
+<input type="button" name="btn" value="botão">
+
+<div id="Div">isso tem ID</div>
+<div class="Div_">isso é uma class</div>
+<div class="Div_">outra class</div>
+<div class="Div_">3 class</div>
+<script>
+
+let p = document.getElementsByTagName("p")[1] 
+
+p.innerText = "agr isso é um inner"
+
+let corpo = document.querySelector("body")
+
+corpo.style.background = "blue"
+
+let p2 = document.getElementById("paragrafo")
+console.log(p2)
+ 
+let botao = document.getElementsByName("btn")[0]
+
+botao.style.background = "transparent"
+
+let div_id = document.getElementById("Div")
+
+console.log(div_id)
+
+let div = document.getElementsByClassName("Div_")[0]
+
+let div_ = document.querySelector("div")
+
+div_.style.background = "red"
+
+console.log(div_)
+    
+
+
+</script>    
+</body>
+</html>
