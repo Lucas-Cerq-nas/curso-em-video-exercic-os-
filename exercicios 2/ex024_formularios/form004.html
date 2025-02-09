@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tel e email</title>
+</head>
+<body>
+    <h1>Teste de telefone e email</h1>
+
+    <form action="scri.js" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required>
+            </div>
+            <div>
+                <label for="itel">telefone</label>
+                <input type="tel" name="tel" id="itel" pattern="\(\d{2}\)\d{3}" required>
+            </div>
+            <input type="submit" value="enviar">
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select, datalist e textArea</title>
+</head>
+<body>
+
+    <h1>SELECT, DATALIST e TEXTAREA</h1>
+
+<div>
+    <label for="iest">Estado:</label>
+    <select name="Estado" id="iest">
+
+        <optgroup label="Região Sudeste">
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+        </optgroup>
+
+
+        <optgroup label="Região Nordeste">
+            <option value="BA" selected>Bahia</option>
+            <option value="MG">Minas gerais</option>
+        </optgroup>
+        
+    </select>
+</div>
+
+<div>
+
+<label for="iprof">Profissões: </label>
+<input type="text" name="prof" id="iprof" list="prof">
+
+<datalist id="prof">
+    <option value="ADM">ADMIN</option>
+    <option >Computador</option>
+</datalist>
+
+</div>
+
+<div>
+<label for="imsg">Menssagem: </label> <br>
+<textarea name="Menssagem" id="imsg" rows="10" cols="30" placeholder="escreva aq.."></textarea>
+
+</div>
+
+</body>
+</html>
