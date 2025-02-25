@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+div.container{
+    display: flex;
+    flex-flow: row nowrap;
+    
+    background-color: lightsalmon;
+}
+
+div.item1{
+    background-color: lightslategray;
+    border: 1px solid black;
+    text-align: center;
+    flex: 0 1 200px;
+    
+}
+
+
+div.item2{
+    background-color: lightslategray;
+    border: 1px solid black;
+    text-align: center;
+
+    flex-basis: 250px;
+    
+}
+
+#i1{
+    flex: 0 1 auto;
+    flex: initial;
+    background-color: gray;
+}
+#i2{
+    
+    flex: 0 0 auto;
+    flex: none;
+}
+#i3{
+    flex: 1 1 auto;
+    flex: auto;
+    background-color: lightsteelblue;
+}
