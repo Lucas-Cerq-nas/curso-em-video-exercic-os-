@@ -1,0 +1,98 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+}
+
+div.container{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 5vh 75vh 15vh 5vh;
+    grid-template-areas: "m h h " 
+                         "m Mai Mai " 
+                         "m a a"
+                         "m f f";
+}
+
+
+header{
+    grid-area: h;
+    text-align: center;
+    background-color: gray;
+}
+
+menu{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: m;
+    text-align: center;
+    width: 100px;
+    background-color: lightslategray;
+    
+}
+
+menu > a{
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main > p{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main.Main1{
+    grid-area: Mai;
+    text-align: justify;
+    border-radius:20px;
+    background-color: black;
+}
+
+aside{
+    grid-area: a;
+    border-radius: 20px;
+    background-color: greenyellow;
+}
+
+aside > ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+aside > ul > li{
+    margin-left: 10px;
+}
+
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-area: f;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    background-color:blueviolet ;
+}

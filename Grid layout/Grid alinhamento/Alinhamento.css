@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+div.container{ /* o pai controla tudo dele*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: #00000085;
+    align-items: baseline;
+    justify-items: center;
+}
+
+.container > div{ /* o pai controla os filhos */
+    background-color: #7159c1;
+    width: 50%;
+    height: 50%;
+}
+
+div#n5{ /* ele controla a si proprio*/
+    align-self: center;
+    justify-self: flex-end;
+}

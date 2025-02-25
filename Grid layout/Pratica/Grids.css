@@ -1,0 +1,111 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    height: 100vh;
+    
+}
+
+div.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: 5vh 10vh 80vh 5vh;
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    background-color: gray;
+}
+
+menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1/4;
+    text-align: center;
+    background-color: lightslategray;
+}
+
+menu > a{
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main > p{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main.Main1{
+    grid-column: 1/2;
+    text-align: justify;
+    border-radius: 0px 20px;
+    background-color: black;
+}
+
+main.Main2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    text-align: justify;
+    border-radius: 20px 0px;
+    background-color: rgb(109, 109, 109);
+}
+
+.Main2 p{
+    order: 2;
+}
+
+.Main2 img{
+    order: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 100% ;
+    background-color: transparent;
+}
+
+aside{
+    grid-column: 3/4;
+    width: 200px;
+    border-radius: 0px 20px;
+    background-color: greenyellow;
+}
+
+aside > ul{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style-type: disc;
+}
+
+footer{
+    grid-column: 1/4;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    background-color:blueviolet ;
+}
