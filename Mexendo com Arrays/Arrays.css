@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #51abff;
+}
+
+header.cabecalho {
+    
+    margin: auto;
+    width: 200px;
+    background-color: transparent;
+}
+
+.cabecalho h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.391);
+}
+
+main.container{
+    position: relative;
+    margin: auto;
+    width: 700px;
+    height: 400px;
+    background-color: transparent;
+}
+
+section.container_{
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #41abff, white);
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+input{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container_ > div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    border-radius: 10px;
+}
+
+.container_ > div.conteudo{
+    margin-top: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+}
+
+.container_ > div.resposta{
+    width: 98%;
+    height: 100%;
+    background-color: white;
+}
+
+.resposta > button#Mostrar{
+    margin: 5px 0px 5px 0px;
+}
+
+
+button{
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(0.9);
+}
+
+button:active{
+    background: linear-gradient(45deg, #41abff, white);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.587);
+}
+
+.resposta > div#paragrafos{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: lightblue;
+}
+
